@@ -1,0 +1,15 @@
+const express = require("express");
+
+require("dotenv").config();
+
+const connectDB = require("./config/db");
+
+const app = express();
+
+connectDB();
+app.use(express.json());
+
+app.use("/api/auth",require("./routes/authRoutes"));
+app.listen(process.env.PORT,()=>
+    console.log(`Server running on port ${process.env.PORT} `)
+);
