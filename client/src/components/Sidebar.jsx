@@ -1,5 +1,6 @@
 
 import {Link} from "react-router-dom";
+import Layout from "./Layout";
 const Sidebar = () =>{
  return (
 
@@ -9,6 +10,7 @@ const Sidebar = () =>{
         <Link className="text-white d-block mb-2" to="/">Dashboard</Link>
         <Link className="text-white d-block mb-2" to="/students">Students</Link>
         <Link className="text-white d-block mb-2" to="/courses">Courses</Link>
+        {/* <Layout/> */}
     </div>
 );
 };

@@ -16,8 +16,8 @@ app.use(cors({
 app.use(express.json());
 
 app.use("/api/auth",require("./routes/authRoutes"));
-app.use("/courses",require("./routes/CourseRoutes"));
-app.use("/students",require("./routes/studentRoutes"));
+app.use("/api/courses",require("./routes/CourseRoutes"));
+app.use("/api/students",require("./routes/studentRoutes"));
 app.get("/",(req,res)=>{
     res.send("Studnet API running");
 })
