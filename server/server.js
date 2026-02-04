@@ -9,7 +9,7 @@ const app = express();
 
 connectDB();
 app.use(cors({
-  origin: "https://studentmern.netlify.app/", // Vite frontend
+  origin: "https://studentmern.netlify.app", // Vite frontend
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));
