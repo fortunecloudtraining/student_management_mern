@@ -9,7 +9,8 @@ const app = express();
 
 connectDB();
 app.use(cors({
-  origin: "https://studentmern.netlify.app", // Vite frontend
+//  origin: "https://studentmern.netlify.app", // Vite frontend
+  origin: "https://student-management-mern.vercel.app", 
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));
